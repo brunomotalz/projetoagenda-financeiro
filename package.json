@@ -4,8 +4,9 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node src/server.js"
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
