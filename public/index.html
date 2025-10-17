@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda e Controle Financeiro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📅 Agenda e 💰 Controle Financeiro</h1>
+
+  <section id="agenda-section">
+    <h2>Agenda</h2>
+    <form id="form-agenda">
+      <input type="text" id="titulo" placeholder="Título" required>
+      <input type="date" id="data" required>
+      <textarea id="descricao" placeholder="Descrição"></textarea>
+      <button type="submit">Adicionar</button>
+    </form>
+    <ul id="lista-agenda"></ul>
+  </section>
+
+  <hr>
+
+  <section id="financeiro-section">
+    <h2>Financeiro</h2>
+    <form id="form-financeiro">
+      <select id="tipo" required>
+        <option value="entrada">Entrada</option>
+        <option value="saida">Saída</option>
+      </select>
+      <input type="number" id="valor" placeholder="Valor" required>
+      <input type="text" id="categoria" placeholder="Categoria">
+      <input type="date" id="dataFinanceiro" required>
+      <textarea id="descricaoFinanceiro" placeholder="Descrição"></textarea>
+      <button type="submit">Adicionar</button>
+    </form>
+    <ul id="lista-financeiro"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
