@@ -4,9 +4,9 @@ const path = require('path');
 const db = knex({
   client: 'sqlite3',
   connection: {
-    filename: path.resolve(__dirname, '../data/database.sqlite')
+    filename: path.resolve(__dirname, '../data/database.sqlite'),
   },
-  useNullAsDefault: true
+  useNullAsDefault: true,
 });
 
 module.exports = db;
